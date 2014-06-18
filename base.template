@@ -1,0 +1,13 @@
+{variables, [
+    {name, "base"},
+    {description, "Example description."}
+]}.
+
+{template, "base/baseapp.app.src", "apps/{{name}}/src/{{name}}.app.src"}.
+{template, "base/baseapp_app.erl", "apps/{{name}}/src/{{name}}_app.erl"}.
+{template, "base/baseapp_sup.erl", "apps/{{name}}/src/{{name}}_sup.erl"}.
+{template, "rebar.config", "rebar.config"}.
+{template, "Makefile", "Makefile"}.
+{file, "rebar", "rebar"}.
+{chmod, 8#744, "rebar"}.
+{file, ".gitignore", ".gitignore"}.
